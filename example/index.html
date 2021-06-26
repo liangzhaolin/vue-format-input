@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Format Input Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="module" src="../dist/vue-format-input.js"></script>
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input
+        type="text"
+        v-model="value"
+        v-demo="{min: 1, max: 10, precision: 2}"
+      />
+      <div class="">{{ value || '-' }}</div>
+    </div>
+  </body>
+</html>
